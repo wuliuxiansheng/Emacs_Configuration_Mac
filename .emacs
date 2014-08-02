@@ -14,6 +14,15 @@
 ;;;show the match of the brackets
 (show-paren-mode t)
 
+
+;;;Time Configuration
+(display-time-mode 1);show time on the bar of the nimibuffer
+(setq display-time-12hr-format t);12 hour format
+(setq display-time-day-and-date t);time + date
+
+;;;cursor stop blinking 
+(blink-cursor-mode -1)
+(transient-mark-mode 1)
 ;;;M-k to kill the buffer and delete the window
 (global-set-key [(meta k)] (lambda () 
                              (interactive) 
