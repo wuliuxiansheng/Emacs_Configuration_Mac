@@ -173,6 +173,19 @@
 (add-hook 'comint-output-filter-functions 'wcy-shell-mode-auto-rename-buffer-output-filter)
 (add-hook 'comint-input-filter-functions 'wcy-shell-mode-auto-rename-buffer-input-filter )
 
+;;;google-c-style configuration
+(add-to-list 'load-path (expand-file-name "~/.emacs.d"))
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
+;;;cc-mode configuration
+(defun my-c-mode-hook ()
+  (setq c-basic-offset 4
+        indent-tabs-mode t
+        default-tab-width 4))
+(add-hook 'c-mode-hook 'my-c-mode-hook)
+
 ;;; Python mode
 (setq auto-mode-alist
 (cons '("\\.py$" . python-mode) auto-mode-alist))
