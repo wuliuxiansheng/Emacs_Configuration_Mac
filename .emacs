@@ -1,5 +1,9 @@
 ;;; emacs configuration file
 
+;;; Personal Information
+(setq user-full-name "Chao Liu")
+(setq user-mail-address "chao.liu0307@gmail.com")
+
 (require 'package)
 (add-to-list 'package-archives 
     '("marmalade" .
@@ -23,6 +27,12 @@
 ;;;cursor stop blinking 
 (blink-cursor-mode -1)
 (transient-mark-mode 1)
+
+;;;highlight the current row
+(require 'hl-line)
+(global-hl-line-mode t)
+
+
 ;;;M-k to kill the buffer and delete the window
 (global-set-key [(meta k)] (lambda () 
                              (interactive) 
@@ -109,8 +119,8 @@
 (defun ac-complete-eshell-pcomplete ()
   (interactive)
   (auto-complete '(ac-source-eshell-pcomplete)))
-;; è‡ªåŠ¨å¼€å¯ ac-mode
-;; éœ€è¦ (global-auto-complete-mode 1)
+;; ×Ô¶¯¿ªÆô ac-mode
+;; ĞèÒª (global-auto-complete-mode 1)
 (add-to-list 'ac-modes 'eshell-mode)
 (setq ac-sources '(ac-source-eshell-pcomplete
                    ;; ac-source-files-in-current-dir
