@@ -1,0 +1,128 @@
+git status 
+git add .
+git status 
+git commit -m "modified the My_Usart a little"
+make 
+make flash 
+git status 
+make 
+make 
+make flash 
+git status 
+git checkout inc/clock_pa0.h
+git checkout src/ov7660.c
+git checkout src/clock_pa0.c
+git checkout src/main.c
+make 
+make flash 
+make
+make 
+make flash 
+git status 
+git add .
+git add --all
+git status 
+git commit -m "delete the PA0 clock output files"
+make 
+make flash 
+make 
+git status 
+git status 
+git add inc/delay.h 
+git add src/delay.c
+git status 
+git commit -m "modified the delay function a little"
+cd ..
+cd ..
+make
+make
+make flash 
+git status 
+git status 
+git status 
+git hist
+git hist 
+git status 
+git add --all
+git status 
+git commit -m "modified and wrote comments for the SCCB library"
+make 
+make flash 
+git status 
+cd inc 
+ls
+ls -a
+rm .#ov7660.h
+ls -a
+ls -a
+cd ..
+git status 
+ls -a
+cd inc 
+ls -a
+rm stm32f37x_it¸±±¾.h
+ls -a
+cd ..
+git status 
+git add .
+git add --all
+git status 
+git reset HEAD inc/.#ov7660.h 
+git status 
+git status 
+cd inc 
+ls -a
+cd ..
+git status 
+git add inc/ov7660.h
+git status 
+git commit -m "modified ov7670 configuration library and wrote some comments"
+make 
+make flash 
+make 
+make flash 
+make flash 
+make 
+make flash 
+git status 
+make 
+make 
+make flash 
+make 
+make flash 
+make 
+make flash 
+make 
+make flash 
+make 
+make flash 
+make 
+make flash 
+make 
+make flash 
+make flash 
+make 
+make 
+make flash 
+make 
+make flash 
+make 
+make flash 
+make 
+make 
+make flash 
+make 
+make 
+make flash 
+make 
+make flash 
+make 
+make flash 
+cd ..
+make
+make flash 
+make flash 
+make flash 
+make flash 
+make 
+make flash 

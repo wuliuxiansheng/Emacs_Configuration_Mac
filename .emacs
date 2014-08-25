@@ -18,6 +18,10 @@
 ;;;show the match of the brackets
 (show-paren-mode t)
 
+;;;don't generate backup files automatically
+(setq make-backup-files nil)
+;;;don't generate temp files
+(setq-default make-backup-files nil)
 
 ;;;Time Configuration
 (display-time-mode 1);show time on the bar of the nimibuffer
