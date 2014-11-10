@@ -184,11 +184,18 @@
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
 ;;;cc-mode configuration
+;; tab indent for c
 (defun my-c-mode-hook ()
   (setq c-basic-offset 4
         indent-tabs-mode t
         default-tab-width 4))
 (add-hook 'c-mode-hook 'my-c-mode-hook)
+;; tab indent for c++
+(defun my-c++-mode-hook()
+  (setq c-basic-offset 4
+	indent-tabs-mode t
+	default-tab-width 4))
+(add-hook 'c++-mode-hook 'my-c++-mode-hook)
 
 ;;; Python mode
 (setq auto-mode-alist
